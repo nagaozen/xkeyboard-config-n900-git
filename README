@@ -30,4 +30,7 @@ Volume +	= XF86AudioRaiseVolume
 Fn + Volume -	= XF86Switch_VT_1
 Fn + Volume +	= XF86Switch_VT_2
 
+In case you wonder where the [] (brackets) are, you'll get them with Multi key; 
+while holding Fn, tap Ctrl, double tap H or J.
+
 Inspired by http://wiki.maemo.org/Remapping_keyboard/user_vis_awesome_kbdmapping
