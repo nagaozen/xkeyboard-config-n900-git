@@ -1,0 +1,33 @@
+xkeyboard-config-n900-git
+=========================
+
+X keyboard configuration files with extended N900 keys (git version)
+
+Adds the following keybinds to RX-51 symbols:
+
+Fn + Return	= Tab
+Fn + Backspace	= Escape
+Fn + Shift + Q	= F1 
+.. Backspace	= F12
+	
+
+Fn + Shift + L	= | (bar)
+Fn + Shift + F	= ~ (asciitilde)
+Fn + Shift + D	= % (percent)
+Fn + Shift + V	= < (less)
+Fn + Shift + B	= > (greater)
+Fn + Shift + N	= { (braceleft)
+Fn + Shift + M	= } (braceright)
+
+4 arrows layout
+Fn + Up		= Page Up
+Fn + Down	= Page Down
+Fn + Left	= Home
+Fn + Right	= End
+
+Volume -	= XF86AudioLowerVolume
+Volume +	= XF86AudioRaiseVolume
+Fn + Volume -	= XF86Switch_VT_1
+Fn + Volume +	= XF86Switch_VT_2
+
+Inspired by http://wiki.maemo.org/Remapping_keyboard/user_vis_awesome_kbdmapping
