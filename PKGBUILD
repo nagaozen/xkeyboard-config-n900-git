@@ -16,6 +16,18 @@ provides=('xkbdata' 'xkeyboard-config')
 replaces=('xkbdata')
 conflicts=('xkbdata' 'xkeyboard-config')
 
+source=(
+'0001-RX-51-Symbols-Bind-Escape-to-third-level-Backspace.patch'
+'0002-RX-51-Symbols-Bind-function-keys-to-fourth-level-top.patch'
+'0003-RX-51-Symbols-Bind-PgUp-PgDown-Home-End-to-third-lev.patch'
+'0004-RX-51-Symbols-Bind-less-and-greater-to-fourth-level-.patch'
+'0005-RX-51-Symbols-Bind-volume-keys-as-XF86-raise-and-low.patch'
+'0006-RX-51-Symbols-Bind-bar-to-fourth-level-L.patch'
+'0007-RX-51-Symbols-Bind-tilde-to-fourth-level-C-and-F.patch'
+'0008-RX-51-Symbols-Bind-percent-to-fourth-level-D.patch'
+'0009-RX-51-Symbols-Bind-Tab-to-third-level-Return.patch'
+'0010-RX-51-Symbols-Bind-braces-to-fourth-level-N-and-M.patch')
+
 _gitroot="git://anongit.freedesktop.org/git/xkeyboard-config"
 _gitname="xkeyboard-config"
 
@@ -36,6 +48,9 @@ build() {
   cp -r "${srcdir}/${_gitname}" "${srcdir}/${_gitname}-build"
 
   cd "${srcdir}/${_gitname}-build/"
+
+  git am ${srcdir}/*.patch
+
   ./autogen.sh
   ./configure --prefix=/usr \
               --with-xkb-base=/usr/share/X11/xkb \
