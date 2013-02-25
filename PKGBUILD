@@ -1,11 +1,12 @@
 # $Id$
+# Maintainer: Joni Lapilainen <joni.lapilainen@gmail.com>
 # Contributor: Alexander Baldeck <kth5@archlinux.org>
 # Contributor: Sébastien Mazy <melyadon@gmail.com>
 # Contributor: Gilrain <pierre.buard+aur gmail com>
-pkgname=xkeyboard-config-git
-pkgver=20130201
+pkgname=xkeyboard-config-n900-git
+pkgver=20130225
 pkgrel=1
-pkgdesc="X keyboard configuration files (git version)"
+pkgdesc="X keyboard configuration files with extended N900 keys (git version)"
 arch=(any)
 license=('custom')
 url="http://www.freedesktop.org/wiki/Software/XKeyboardConfig"
@@ -13,7 +14,7 @@ depends=('xorg-xkbcomp')
 makedepends=('git' 'intltool' 'xorg-util-macros')
 provides=('xkbdata' 'xkeyboard-config')
 replaces=('xkbdata')
-conflicts=('xkbdata')
+conflicts=('xkbdata' 'xkeyboard-config')
 
 _gitroot="git://anongit.freedesktop.org/git/xkeyboard-config"
 _gitname="xkeyboard-config"
