@@ -1,6 +1,20 @@
 xkeyboard-config-n900-git
 =========================
 
+Usage
+-----
+
+```sh
+$ pacman -Syu base-devel git
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+$ makepkg
+$ pacman -U xkeyboard-config-n900-git-20130225-1-any.pkg.tar.xz
+```
+
+Configuration
+-------------
+
 X keyboard configuration files with extended N900 keys (git version)
 
 Adds the following keybinds to RX-51 symbols:
